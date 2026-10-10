@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Harebare · Política de privacidad / Privacy Policy</title>
+<meta name="description" content="Política de privacidad de Harebare, la alarma con retos de Camarasaurio Labs. / Privacy policy for Harebare, the challenge alarm by Camarasaurio Labs.">
+<style>
+@font-face { font-family: "Fraunces"; src: url("../fonts/fraunces.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("../fonts/figtree.ttf") format("truetype"); font-weight: 300 900; font-display: swap; }
+:root {
+  --bg: #fbf6ef; --surface: #ffffff; --fg: #1b1f3a; --muted: #5a5d78; --line: #e7dfd3;
+  --accent: #b5762a; --accent-soft: #f3e3c6; --sky-top: #f6e7d6; --sky-mid: #f4c9b6; --sky-low: #f6d897;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1330; --surface: #141c40; --fg: #fff6e9; --muted: #c9c1d9; --line: #2a3363;
+    --accent: #f6cf7e; --accent-soft: #2a2a5a; --sky-top: #070c20; --sky-mid: #3a3577; --sky-low: #b77e6b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1330; --surface: #141c40; --fg: #fff6e9; --muted: #c9c1d9; --line: #2a3363;
+  --accent: #f6cf7e; --accent-soft: #2a2a5a; --sky-top: #070c20; --sky-mid: #3a3577; --sky-low: #b77e6b;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.65; margin: 0; }
+.sky { background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 62%, var(--sky-low) 100%); padding-inline: 16px; padding-block: 48px 40px; }
+.wrap { max-width: 68ch; margin-inline: auto; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.brand { font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 0.02em; display: flex; align-items: center; gap: 10px; }
+.sun { width: 26px; height: 13px; border-radius: 26px 26px 0 0; background: var(--accent); display: inline-block; }
+.langs { display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.langs button { font: 600 0.85rem var(--font-body); border: 0; background: transparent; color: var(--muted); padding: 6px 14px; border-radius: 999px; cursor: pointer; min-height: 36px; }
+.langs button[aria-pressed="true"] { background: var(--accent-soft); color: var(--fg); }
+.langs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.15; margin: 36px 0 8px; text-wrap: balance; }
+.meta { color: var(--muted); font-size: 0.92rem; margin: 0; }
+main { padding-inline: 16px; padding-block: 32px 64px; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; margin-bottom: 28px; }
+.summary ul { margin: 8px 0 0; padding-left: 1.2em; display: grid; gap: 4px; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; margin: 34px 0 6px; text-wrap: balance; }
+table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.table { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 700; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 0.9em; overflow-wrap: anywhere; }
+.contact { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.contact a { background: var(--accent-soft); color: var(--fg); padding: 4px 10px; border-radius: 8px; text-decoration: none; font-family: ui-monospace, Consolas, monospace; font-size: 0.9em; overflow-wrap: anywhere; }
+footer { color: var(--muted); font-size: 0.85rem; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 16px; }
+@media (prefers-reduced-motion: no-preference) { .langs button { transition: background 0.2s; } }
+</style>
+</head>
+<body>
+<header class="sky">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand"><span class="sun" aria-hidden="true"></span>Harebare</div>
+      <div class="langs" role="group" aria-label="Idioma / Language">
+        <button type="button" aria-pressed="true" data-lang="es">Español</button>
+        <button type="button" aria-pressed="false" data-lang="en">English</button>
+      </div>
+    </div>
+    <div lang="es" data-section="es">
+      <h1>Política de privacidad</h1>
+      <p class="meta">Vigente desde el 10 de octubre de 2026 · Camarasaurio Labs</p>
+    </div>
+    <div lang="en" data-section="en" hidden>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective October 10, 2026 · Camarasaurio Labs</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <article lang="es" data-section="es">
+      <section class="summary">
+        <strong>En resumen</strong>
+        <ul>
+          <li>Harebare no tiene cuentas, ni servidor propio, ni anuncios, ni analíticas.</li>
+          <li>No recogemos, vendemos ni compartimos tus datos.</li>
+          <li>Tu voz se procesa dentro del teléfono y no se guarda ni se envía a nadie.</li>
+          <li>Tus alarmas, frases, fechas y fotos se quedan en tu dispositivo.</li>
+          <li>La app no se conecta a internet ni usa tu ubicación.</li>
+        </ul>
+      </section>
+
+      <p>Esta política explica qué datos usa la app Harebare (paquete <code>com.camarasaurio.harebare</code>), desarrollada por Camarasaurio Labs, y cómo los protege. Harebare es una app gratuita de alarma que te propone retos para despertar.</p>
+
+      <h2>Lo que se guarda en tu teléfono</h2>
+      <p>Tu nombre, tu fecha de nacimiento (opcional), el idioma, tus temas favoritos, tus alarmas y ajustes, tus frases y afirmaciones, las grabaciones de tu voz, las fotos de tus amaneceres, tus fechas especiales, tu colección de descubrimientos y el recuerdo de tus mañanas («Tu cielo»: la frase, el dato y la foto de cada mañana). Todo se guarda en el almacenamiento privado de la app y ninguna otra app puede leerlo. Camarasaurio Labs no tiene acceso a estos datos.</p>
+
+      <h2>Permisos y para qué se usan</h2>
+      <div class="table">
+        <table>
+          <thead><tr><th>Permiso</th><th>Uso</th></tr></thead>
+          <tbody>
+            <tr><td>Micrófono</td><td>El reconocimiento de voz de las frases de poder funciona sin conexión, con un modelo (Vosk) incluido en la app. Lo que dices se procesa en tu teléfono y no se guarda ni se envía a ningún sitio. Solo se guardan las grabaciones que tú decides hacer en «Mis frases».</td></tr>
+            <tr><td>Cámara</td><td>Se usa para «Captura tu amanecer», y la foto se guarda solo en tu teléfono. Si tu teléfono no tiene sensor de luz, la cámara mide la luz durante el reto «Busca la luz»: las imágenes se analizan al momento y no se guardan.</td></tr>
+            <tr><td>Notificaciones, alarmas exactas, pantalla completa, inicio con el sistema, vibración</td><td>Hacer sonar las alarmas a su hora, mostrarlas sobre la pantalla de bloqueo y enviarte avisos como «¿Ya en pie?», «Saltar esta vez» o la rutina de noche.</td></tr>
+            <tr><td>Acceso a No molestar (opcional)</td><td>Solo si lo concedes: se usa únicamente mientras suena la alarma, para que pueda oírse, y después se deja todo como estaba.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Copia de seguridad</h2>
+      <p>Si tienes activada la copia de seguridad de Android, el sistema guarda una copia cifrada de los datos de la app en tu cuenta de Google Drive, para que no los pierdas al cambiar de teléfono. Las fotos de tus amaneceres no se incluyen en esa copia en la nube; sí pasan al nuevo teléfono con la transferencia directa entre dispositivos. Esa copia la gestiona Google, no Camarasaurio Labs, y puedes desactivarla en los ajustes de tu teléfono.</p>
+
+      <h2>Compartir y guardar en la galería</h2>
+      <p>Aparte de lo anterior, nada sale de la app salvo que tú lo compartas con la app que elijas (por ejemplo, una frase o una foto de tu amanecer). Si usas «Guardar en la galería», la imagen se guarda en el almacenamiento compartido de tu teléfono, donde pueden verla tus apps de galería y fotos.</p>
+
+      <h2>Lo que no hacemos</h2>
+      <p>No vendemos ni compartimos datos, no mostramos publicidad, no usamos herramientas de analítica ni de seguimiento y no creamos perfiles de usuario.</p>
+
+      <h2>Borrar tus datos</h2>
+      <p>Puedes borrar cada dato desde la propia app. Para borrarlo todo, borra los datos de Harebare en los ajustes de tu teléfono o desinstala la app; si usas la copia de seguridad, también puedes borrarla desde Google Drive. Las imágenes que hayas guardado en la galería se borran desde tu app de galería.</p>
+
+      <h2>Menores</h2>
+      <p>Harebare está pensada para el público general y no está dirigida a menores de 13 años. No recopilamos conscientemente datos de menores y, como se ha explicado, la app no envía datos personales a Camarasaurio Labs.</p>
+
+      <h2>Cambios en esta política</h2>
+      <p>Si la política cambia, publicaremos la nueva versión en esta misma página con su fecha de entrada en vigor.</p>
+
+      <h2>Contacto</h2>
+      <p>Si tienes cualquier pregunta sobre esta política o sobre tus datos, escríbenos:</p>
+      <div class="contact"><a href="mailto:nilo.vallejo.dev@gmail.com">nilo.vallejo.dev@gmail.com</a></div>
+    </article>
+
+    <article lang="en" data-section="en" hidden>
+      <section class="summary">
+        <strong>In short</strong>
+        <ul>
+          <li>Harebare has no accounts, no servers of its own, no ads and no analytics.</li>
+          <li>We don't collect, sell or share your data.</li>
+          <li>Your voice is processed on your phone and is never stored or sent anywhere.</li>
+          <li>Your alarms, phrases, dates and photos stay on your device.</li>
+          <li>The app doesn't connect to the internet or use your location.</li>
+        </ul>
+      </section>
+
+      <p>This policy explains what data the Harebare app (package <code>com.camarasaurio.harebare</code>), developed by Camarasaurio Labs, uses and how it is protected. Harebare is a free alarm app that gives you challenges to help you wake up.</p>
+
+      <h2>What is stored on your phone</h2>
+      <p>Your name, your date of birth (optional), language, favorite themes, alarms and settings, phrases and affirmations, your voice recordings, your sunrise photos, your special dates, your discoveries collection and the memory of your mornings (“Your sky”: each morning's phrase, fact and photo). Everything is kept in the app's private storage, and no other app can read it. Camarasaurio Labs has no access to this data.</p>
+
+      <h2>Permissions and what they are for</h2>
+      <div class="table">
+        <table>
+          <thead><tr><th>Permission</th><th>Use</th></tr></thead>
+          <tbody>
+            <tr><td>Microphone</td><td>Speech recognition for power phrases works offline, with a model (Vosk) bundled in the app. What you say is processed on your phone and is never stored or sent anywhere. Only the recordings you choose to make in “My phrases” are saved.</td></tr>
+            <tr><td>Camera</td><td>Used for “Capture your sunrise”; the photo is saved only on your phone. If your phone has no light sensor, the camera measures light during the “Find the light” challenge: frames are analyzed on the spot and never saved.</td></tr>
+            <tr><td>Notifications, exact alarms, full screen, run at startup, vibration</td><td>Ring alarms on time, show them over the lock screen and send you reminders such as “Up and about?”, “Skip this time” or the night routine.</td></tr>
+            <tr><td>Do Not Disturb access (optional)</td><td>Only if you grant it: it is used only while an alarm is ringing, so you can hear it, and everything is restored afterwards.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Backup</h2>
+      <p>If Android backup is turned on, the system keeps an encrypted copy of the app's data in your Google Drive account, so you don't lose it when you change phones. Your sunrise photos are not included in that cloud backup; they do move to your new phone with a direct device-to-device transfer. That copy is managed by Google, not Camarasaurio Labs, and you can turn it off in your phone's settings.</p>
+
+      <h2>Sharing and saving to your gallery</h2>
+      <p>Apart from that, nothing leaves the app unless you share it yourself with the app you choose (for example, a phrase or a sunrise photo). If you use “Save to gallery”, the image is saved to your phone's shared storage, where your gallery and photo apps can see it.</p>
+
+      <h2>What we don't do</h2>
+      <p>We don't sell or share data, show ads, use analytics or tracking tools, or build user profiles.</p>
+
+      <h2>Deleting your data</h2>
+      <p>You can delete each item from within the app. To delete everything, clear Harebare's data in your phone's settings or uninstall the app; if you use backup, you can also delete it from Google Drive. Images you saved to your gallery are deleted from your gallery app.</p>
+
+      <h2>Children</h2>
+      <p>Harebare is intended for a general audience and is not directed at children under 13. We do not knowingly collect data from children and, as explained above, the app does not send personal data to Camarasaurio Labs.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, we will publish the new version on this page with its effective date.</p>
+
+      <h2>Contact</h2>
+      <p>If you have any questions about this policy or your data, write to us:</p>
+      <div class="contact"><a href="mailto:nilo.vallejo.dev@gmail.com">nilo.vallejo.dev@gmail.com</a></div>
+    </article>
+
+    <footer>
+      <span data-section="es" lang="es">Harebare · Despierta radiante · Esta página no usa cookies ni carga recursos de terceros.</span>
+      <span data-section="en" lang="en" hidden>Harebare · Wake up radiant · This page uses no cookies and loads no third-party resources.</span>
+    </footer>
+  </div>
+</main>
+
+<script>
+(function () {
+  function setLang(lang) {
+    document.querySelectorAll('[data-section]').forEach(function (el) { el.hidden = el.getAttribute('data-section') !== lang; });
+    document.querySelectorAll('.langs button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang)); });
+    document.documentElement.lang = lang;
+  }
+  document.querySelectorAll('.langs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var lang = b.getAttribute('data-lang');
+      setLang(lang);
+      if (history.replaceState) history.replaceState(null, '', '#' + lang);
+    });
+  });
+  var initial = location.hash === '#en' ? 'en' : (location.hash === '#es' ? 'es' : ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en'));
+  setLang(initial);
+})();
+</script>
+</body>
+</html>
